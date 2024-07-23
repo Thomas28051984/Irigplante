@@ -1,5 +1,7 @@
 <?php
 
+require_once('templates/doctype');
+
 require_once('config.php');
 
 require_once('src/GestionSQL.php');
