@@ -40,18 +40,9 @@ if (!empty($_GET['security'])) {
             $pageController->logout($gestionSQL);
     }
 
-} elseif (!empty($_GET['immo'])) {
-    $addImmoController = new ImmoController();
-
-    switch ($_GET['immo']) {
-        case 'ajouterBien':
-            $addImmoController->ajouterBien($gestionSQL, $_POST);
-            break;
-    }
 
 } else {
     $accueilController = new AccueilController();
     $accueilController->accueil($gestionSQL);
 }
 
-?>
