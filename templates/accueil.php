@@ -1,7 +1,8 @@
 <?php
 require_once('doctype.php');
-?>
 
+?>
+require_once('templates/bannière.php')
 <body>
     <div class="navbar">
         <div class="logo">
