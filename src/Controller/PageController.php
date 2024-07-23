@@ -13,8 +13,6 @@ class PageController extends Controller
 
     public function register(GestionSQL $gestionSQL, $request)
     {
-        $prenom = trim($request['prenom'] ?? '');
-        $nom = trim($request['nom'] ?? '');
         $password = trim($request['password'] ?? '');
         $mail = trim($request['mail'] ?? '');
         $messageErreur = '';
@@ -24,10 +22,8 @@ class PageController extends Controller
             }
             if (!empty($password) && !empty($prenom) && !empty($nom)) {
                 $data = [
-                    'username' => htmlspecialchars($mail),
+                    
                     'password' => md5($password),
-                    'prenom' => htmlspecialchars($prenom),
-                    'nom' => htmlspecialchars($nom),
                     'mail' => htmlspecialchars($mail),
 
                 ];

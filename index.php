@@ -53,3 +53,5 @@ if (!empty($_GET['security'])) {
     $accueilController = new AccueilController();
     $accueilController->accueil($gestionSQL);
 }
+
+?>

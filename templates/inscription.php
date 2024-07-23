@@ -36,3 +36,4 @@ require_once ('src/Controller/PageController.php');
     </body>
 <?php
 require_once('footer.php');
+?>
